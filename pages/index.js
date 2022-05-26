@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import HeroPage from "./heroPage";
+import Clients from "./clients";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroPage />
+      <Clients />
     </div>
   );
 }
