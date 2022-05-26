@@ -21,7 +21,7 @@ export default function Navbar() {
             <div className="relative flex items-center justify-between h-16 md:mx-20 mx-0">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -33,7 +33,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center ">
                   <h1 className="font-semibold text-xl cursor-pointer ">
-                    SPRZĄTA<span className="text-violet-500">MY</span>
+                    SPRZĄTA<span className="text-blue-500">MY</span>
                   </h1>
                 </div>
                 <div className="hidden sm:block sm:ml-6 md:ml-60">
@@ -44,8 +44,8 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-violet-500 shadow-lg text-white"
-                            : "text-gray-300 hover:shadow-lg hover:bg-violet-500 hover:text-white",
+                            ? "bg-blue-500 shadow-lg text-white"
+                            : "text-gray-400 hover:shadow-lg hover:bg-blue-500 hover:text-white",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -57,7 +57,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button className="px-3 py-2 rounded-md text-sm font-medium border border-violet-100 text-violet-400 hover:bg-violet-500 hover:shadow-lg  hover:text-white">
+                <button className="px-3 py-2 rounded-md text-sm font-medium border border-blue-100 text-blue-400 hover:bg-blue-500 hover:shadow-lg  hover:text-white">
                   Zadzwoń
                 </button>
               </div>
@@ -73,8 +73,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-violet-500 shadow-lg text-white"
-                      : "text-gray-300 hover:bg-violet-500 hover:shadow-lg hover:text-white",
+                      ? "bg-blue-500 shadow-lg text-white"
+                      : "text-gray-400 hover:bg-blue-500 hover:shadow-lg hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
