@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 import HeroPage from "./heroPage";
 import Clients from "./clients";
 import Services from "./services";
@@ -18,6 +19,7 @@ export default function Home() {
       <Clients />
       <Services />
       <Blog />
+      <Contact />
     </div>
   );
 }
