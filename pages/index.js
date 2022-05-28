@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import HeroPage from "./heroPage";
 import Clients from "./clients";
+import Services from "./services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <HeroPage />
       <Clients />
+      <Services />
     </div>
   );
 }
